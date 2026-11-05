@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Um cantinho mágico para conjurar feitiços e espalhar amor."
+    />
+    <title>Sala Precisa do Amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="room">
+      <div class="room__glow room__glow--one" aria-hidden="true"></div>
+      <div class="room__glow room__glow--two" aria-hidden="true"></div>
+      <div class="stars" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Sala Precisa do Amor — início">
+          <span class="brand__mark" aria-hidden="true">✦</span>
+          <span>Sala Precisa <span class="brand__accent">do Amor</span></span>
+        </a>
+        <span class="topbar__note"><span></span> um lugar só seu</span>
+      </header>
+
+      <section class="welcome" aria-labelledby="welcome-title">
+        <p class="eyebrow"><span>✦</span> A magia começa aqui <span>✦</span></p>
+        <h1 id="welcome-title">O que seu coração<br />precisa hoje?</h1>
+        <p class="welcome__copy">
+          Escolha um feitiço e deixe a magia encontrar você.
+        </p>
+      </section>
+
+      <section class="owl-scene" aria-label="Uma coruja mágica">
+        <div class="moon" aria-hidden="true"></div>
+        <div class="orbit orbit--outer" aria-hidden="true"></div>
+        <div class="orbit orbit--inner" aria-hidden="true"></div>
+        <span class="spark spark--one" aria-hidden="true">✧</span>
+        <span class="spark spark--two" aria-hidden="true">✦</span>
+        <span class="spark spark--three" aria-hidden="true">·</span>
+        <span class="spark spark--four" aria-hidden="true">✧</span>
+        <div class="speech-bubble" role="status" aria-live="polite"></div>
+        <div class="owl" aria-hidden="true">🦉</div>
+        <div class="owl-scene__base" aria-hidden="true"></div>
+      </section>
+
+      <footer class="spell-dock">
+        <div class="spell-dock__heading">
+          <span>SEU PRÓXIMO FEITIÇO</span>
+          <span class="spell-dock__rule"></span>
+          <span class="spell-dock__hint">escolha com carinho</span>
+        </div>
+        <nav class="spells" aria-label="Feitiços">
+          <button class="spell" type="button" onclick="lancarFeitico('Accio')"><span>✧</span> Accio</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Lumos')"><span>✧</span> Lumos</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Expecto Patronum')"><span>✧</span> Expecto Patronum</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Wingardium Leviosa')"><span>✧</span> Wingardium Leviosa</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Aguamenti')"><span>✧</span> Aguamenti</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Incendio')"><span>✧</span> Incendio</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Avis')"><span>✧</span> Avis</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Riddikulus')"><span>✧</span> Riddikulus</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Nox')"><span>✧</span> Nox</button>
+          <button class="spell" type="button" onclick="lancarFeitico('Alohomora')"><span>✧</span> Alohomora</button>
+        </nav>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
