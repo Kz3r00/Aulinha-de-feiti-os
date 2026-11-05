@@ -58,19 +58,37 @@
           <span class="spell-dock__hint">escolha com carinho</span>
         </div>
         <nav class="spells" aria-label="Feitiços">
-          <button class="spell" type="button" onclick="lancarFeitico('Accio')"><span>✧</span> Accio</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Lumos')"><span>✧</span> Lumos</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Expecto Patronum')"><span>✧</span> Expecto Patronum</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Wingardium Leviosa')"><span>✧</span> Wingardium Leviosa</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Aguamenti')"><span>✧</span> Aguamenti</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Incendio')"><span>✧</span> Incendio</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Avis')"><span>✧</span> Avis</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Riddikulus')"><span>✧</span> Riddikulus</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Nox')"><span>✧</span> Nox</button>
-          <button class="spell" type="button" onclick="lancarFeitico('Alohomora')"><span>✧</span> Alohomora</button>
+          <button class="spell" data-spell="Accio" type="button" onclick="lancarFeitico('Accio')"><span>✧</span> Accio</button>
+          <button class="spell" data-spell="Lumos" type="button" onclick="lancarFeitico('Lumos')"><span>✧</span> Lumos</button>
+          <button class="spell" data-spell="Expecto Patronum" type="button" onclick="lancarFeitico('Expecto Patronum')"><span>✧</span> Expecto Patronum</button>
+          <button class="spell" data-spell="Wingardium Leviosa" type="button" onclick="lancarFeitico('Wingardium Leviosa')"><span>✧</span> Wingardium Leviosa</button>
+          <button class="spell" data-spell="Aguamenti" type="button" onclick="lancarFeitico('Aguamenti')"><span>✧</span> Aguamenti</button>
+          <button class="spell" data-spell="Incendio" type="button" onclick="lancarFeitico('Incendio')"><span>✧</span> Incendio</button>
+          <button class="spell" data-spell="Avis" type="button" onclick="lancarFeitico('Avis')"><span>✧</span> Avis</button>
+          <button class="spell" data-spell="Riddikulus" type="button" onclick="lancarFeitico('Riddikulus')"><span>✧</span> Riddikulus</button>
+          <button class="spell" data-spell="Nox" type="button" onclick="lancarFeitico('Nox')"><span>✧</span> Nox</button>
+          <button class="spell" data-spell="Alohomora" type="button" onclick="lancarFeitico('Alohomora')"><span>✧</span> Alohomora</button>
         </nav>
       </footer>
     </main>
+    <div class="secret-letter-backdrop" hidden>
+      <section
+        class="secret-letter"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="secret-letter-title"
+        aria-describedby="secret-letter-message"
+      >
+        <button class="secret-letter__close" type="button" aria-label="Fechar carta">×</button>
+        <p class="secret-letter__eyebrow">✦ um segredo só nosso ✦</p>
+        <h2 id="secret-letter-title">Bilhete de Amor</h2>
+        <p class="secret-letter__message" id="secret-letter-message">
+          Você descobriu todos os feitiços! ✦ Meu coração é todo seu.
+          Obrigado por brincar comigo. ♡
+        </p>
+        <span class="secret-letter__signature">Com carinho, sua coruja 🦉</span>
+      </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
